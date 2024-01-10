@@ -1,0 +1,43 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/styles.css" />
+    <link rel="stylesheet" href="./assets/scripts/textLimiter.js" />
+    <link rel="stylesheet" href="" />
+    <link
+      rel="shortcut icon"
+      href="./assets/img/favicon.ico"
+      type="image/x-icon"
+    />
+    <title>Cards With Moviment</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="box">
+        <h2 class="name">PC</h2>
+        <a href="#" class="vote">Vote</a>
+        <img src="./assets/img/pc.png" class="product" alt="PC Image" />
+      </div>
+      <div class="box">
+        <h2 class="name">Console</h2>
+        <a href="#" class="vote">Vote</a>
+        <img src="./assets/img/console.png" class="product" alt="Console Image" />
+      </div>
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"
+      integrity="sha512-wC/cunGGDjXSl9OHUH0RuqSyW4YNLlsPwhcLxwWW1CR4OeC2E1xpcdZz2DeQkEmums41laI+eGMw95IJ15SS3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      VanillaTilt.init(document.querySelector(".box"), {
+        max: 25,
+        speed: 400,
+      });
+    </script>
+  </body>
+</html>
